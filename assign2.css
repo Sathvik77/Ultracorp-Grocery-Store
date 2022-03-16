@@ -1,0 +1,139 @@
+body {
+            margin: 10;
+            padding: 10;
+            background-image: url(https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-background-for-website-in-light-color-1-1024x640.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+    h1, h4{
+        color: black;    
+    }
+    h3{
+        color: greenyellow;
+    }
+    h1{
+        text-shadow: 2px 2px;
+    }
+        .main {
+            display: grid;
+            grid-template-columns: 33% 33% 33% ;
+            margin: 100px 10vw;
+        }
+
+        .product {
+            height: 30vw;
+            min-height: 300px;
+            margin: 2rem;
+        }
+
+        .product__rotate {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 1.0s;
+            -ms-transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .product__vis {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -ms-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .product__vis.back, .product__rotate:hover {
+            -ms-transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+        }
+
+        .MILK {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=1248117-847&recipeName=680");
+        }
+
+        .OATS {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=1365486-847&recipeName=680");
+        }
+
+        .POPCORN {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&imageId=9555-inc__1&recipeName=350");
+        }
+
+        .MILK_CHOCOLATE_ALMONDS {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=376052-inc&recipeName=680");
+        }
+
+        .DRYSHEETS {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=1006152-847&recipeName=680");
+        }
+
+        .PUMPKIN_FLAX {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=993467-847&recipeName=680");
+        }
+
+        .BATTERIES {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=516590-847&recipeName=680");
+        }
+
+        .FRY_PAN {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=800166-847&recipeName=680");
+        }
+
+        .DARK_CHOCOLATE {
+            background-image: url("https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=1452872-847&recipeName=680");
+        }
+
+        .product {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .product a {
+            display: block;
+            width: 100px;
+            background: #c9bebe;
+            -webkit-border-radius: 20;
+            -moz-border-radius: 20;
+            border-radius: 20px;
+            font-family:'Times New Roman', Times, serif;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            margin: 5% auto;
+            text-decoration: none;
+        }
+
+        .product a:hover {
+            background-image: linear-gradient(to bottom, #3dffbe, #00ff6a);
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 992px) {
+            .main {
+                grid-template-columns: 50% 50%;
+            }
+
+            .product {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                grid-template-columns: 100%;
+            }
+
+            .product {
+                text-align: center;
+                font-size: 20px;
+            }
